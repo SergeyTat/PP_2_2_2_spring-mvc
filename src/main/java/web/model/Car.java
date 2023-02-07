@@ -7,8 +7,8 @@ import org.springframework.stereotype.Component;
 //@Scope("prototype")
 public class Car {
     private int id;
-    String carBrand;
-    String series;
+    private String carBrand;
+    private String series;
 
     public Car() {
     }

@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 @Repository
 public class CarDaoImpl implements CarDao {
 
-    List<Car> car;
+    private List<Car> car;
 
     {
         car = new ArrayList<>();

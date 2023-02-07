@@ -11,8 +11,12 @@ import web.dao.CarDaoImpl;
 @Controller
 public class CarController {
 
+    private final CarDao carDao;
     @Autowired
-    CarDao carDao;
+
+    public CarController(CarDao carDao) {
+        this.carDao = carDao;
+    }
 
     @GetMapping(value = "/cars")
     public String printCar(@RequestParam(value = "count", defaultValue = "5") int count, Model model) {
